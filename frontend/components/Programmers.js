@@ -56,7 +56,7 @@ export default function Programmers() {
           programmers.map(dev =>
             <div className='programmer' key={dev.id}>
               {dev.name} <button onClick={() => {
-                selectedProgrammer(dev.id)
+                setSelectedProgrammer(dev.id)
                }}>Feature</button>
             </div>
           )
